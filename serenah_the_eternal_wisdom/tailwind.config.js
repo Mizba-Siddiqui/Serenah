@@ -5,6 +5,7 @@ export default {
     "./src/**/*.{js,ts,jsx,tsx}",
   ],
   theme: {
+
     extend: {
       fontFamily: {
         sans: ['Poppins', 'sans-serif'],
@@ -12,6 +13,12 @@ export default {
       }
     }
   },
-  plugins: [],
+  plugins: [
+    require('daisyui'),
+  ],
+
+  daisyui: {
+    themes: ["autumn"],
+  },
 }
 
